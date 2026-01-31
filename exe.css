@@ -40,5 +40,12 @@
 
     .strech-button{
         background-color: black;
-        
+        color: white;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .strech-button:hover{
+        width: 100px;
+        height: 40px;
     }
