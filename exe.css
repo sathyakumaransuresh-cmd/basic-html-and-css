@@ -37,3 +37,8 @@
     .buy-button:active{
         background-color: green;
     }
+
+    .strech-button{
+        background-color: black;
+        
+    }
