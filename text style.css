@@ -1,0 +1,28 @@
+.video-title {
+    font-family: arial;
+    font-size: 18px;
+    font-weight: bold;
+    width: 300px;
+    line-height: 24px;
+    margin-bottom: 5px;
+}
+.view-count {
+    color: grey;
+    font-family: arial;
+    font-size: 14px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+.channel-name {
+    font-family: arial;
+    font-size: 14px;
+    margin-bottom: 18px;
+    color: gray;
+}
+.video-description{
+    font-family: arial;
+    font-size: 14px;
+    color: gray;
+    line-height: 20px;
+    width: 300px;
+}
