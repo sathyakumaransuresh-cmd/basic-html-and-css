@@ -26,3 +26,18 @@
     line-height: 20px;
     width: 300px;
 }
+.shout-out{
+    cursor: pointer;
+}
+.shout-out:hover{
+    text-decoration: underline;
+}
+.video-design{
+    font-family: arial;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    background-color: rgb(227, 65, 64);
+    margin-right: 8px;
+    padding: 18px;
+}
