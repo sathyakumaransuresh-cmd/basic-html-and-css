@@ -7,7 +7,7 @@
     height: 60px;
     background-color: white;
     width: 100%;
-    border-bottom-width: 2px;
+    border-bottom-width: 1px;
     border-bottom-color: rgb(222, 222, 222);
     border-bottom-style: solid;
     z-index: 1;
@@ -22,6 +22,7 @@
   z-index: 200;
   padding-top: 5px;
 }
+
 .sidebar-icon{
   height: 74px;
   display: flex;
@@ -30,7 +31,7 @@
   flex-direction: column;
   cursor: pointer;
 }
-.sidebar-link:hover {
+.sidebar-icon:hover {
   background-color: rgb(235, 235, 235);
 }
 .sidebar-icon img {
@@ -88,6 +89,7 @@
 }
 
 .search-button {
+  display: relative;
   height: 39px;
   width: 66px;
   background-color: rgb(240, 240, 240);
@@ -97,10 +99,40 @@
   margin-left: -1px;
   margin-right: 10px;
   border-radius: 1px;
-
 }
 
+.search-button .tooltip,
+.voice-search-button .tooltip,
+.upload-container .tooltip,
+.Apps-containter .tooltip,
+.notifications-icon-class .tooltip{
+  position: absolute;
+  background-color: gray;
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 8px;
+  padding-right: 8px;
+  border-radius: 2px;
+  font-size: 12px;
+  bottom: -30px;
+  opacity: 0;
+  transition: 0.15s;
+}
+
+.search-button:hover .tooltip,
+.voice-search-button:hover .tooltip,
+.upload-container:hover .tooltip,
+.Apps-containter:hover .tooltip,
+.notifications-icon-class:hover .tooltip{
+  opacity: 1;
+  cursor: pointer;
+}
+.upload-container{
+  position: relative;
+}
 .voice-search-button {
+  display: relative;
   height: 40px;
   width: 40px;
   border-radius: 30px;
@@ -113,18 +145,36 @@
   margin-top: 4px;
 }
 
-
 .Search-bar::placeholder{
-    font-family: Roboto,arial;
-    font-size: 16px;
+  font-family: Roboto,arial;
+  font-size: 16px;
 }
 .right-section {
   width: 180px;
   margin-right: 20px;
   display: flex;
+  display: relative;
   align-items: center;
   justify-content: space-between;
   flex-shrink: 0;
+}
+
+.notifications-icon-class{
+  display: relative;
+}
+.notifications-count {
+  position: absolute;
+  bottom: 30px;
+  right:73.5px;
+  background-color: rgb(200, 0, 0);
+  color: white;
+  font-family: Roboto, Arial;
+  font-size: 11px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  border-radius: 10px;
 }
 
 .upload-icon {
@@ -162,6 +212,7 @@ body {
 }   
 
 .video-title{
+  font-family: Roboto, Arial, sans-serif;;
     margin-top: 0;
     font-size: 14px;
     font-weight: 500;
@@ -175,17 +226,21 @@ body {
     position: relative  ;
 }
 
-.video-time{
-    position: absolute;
-    bottom: 4px;
-    right: 4px;
-    background-color: rgb(0, 0, 0);
-    color: white;
-    font-size: 12px;
-    padding-left: 4px;
-    padding-right: 4px;
-    border-radius: 2px;
-    }   
+.video-time {
+  font-family: Roboto, Arial;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 4px;
+  padding-right: 4px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-radius: 2px;
+  background-color: black;
+  color: white;
+  position: absolute;
+  bottom: 8px;
+  right: 5px;
+}  
 
 .column-grid{
     display: grid;
@@ -204,7 +259,7 @@ body {
     padding-top: 80px;
     padding-left: 80px;
     padding-right: 20px;
-    background-color: rgb(245, 241, 241);
+    background-color: rgb(248, 248, 248);
 }
 
 .video{
@@ -215,7 +270,7 @@ body {
 }
 
 .profile-picture{
-    width: 40px;
+    width: 36px;
     border-radius: 50px;
 }
 
@@ -228,4 +283,5 @@ body {
 .video-channel{
     margin-bottom: 4px;
 }
+
 
